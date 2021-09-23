@@ -13,6 +13,6 @@ public class PessoaController {
 
     @GetMapping("")
     public ResponseEntity<String> consultarPessoas() {
-        return ResponseEntity.ok("Hello World");
+        return ResponseEntity.ok("Hello World 2");
     }
 }
