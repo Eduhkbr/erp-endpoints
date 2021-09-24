@@ -1,8 +1,3 @@
-- provider: gae
-  keyfile: /home/eduardo/Downloads/erp-test-202020-fb7a70a703a8.json
-  project: DEFINIR
-  on:
-    branch: main
 cache:
   directories:
     - $HOME/.m2
@@ -11,3 +6,8 @@ jdk: openjdk11
 install: true
 script: 
   - ./build.sh
+  - provider: gae
+   keyfile: /home/eduardo/Downloads/erp-test-202020-fb7a70a703a8.json
+   project: DEFINIR
+   on:
+    branch: main
