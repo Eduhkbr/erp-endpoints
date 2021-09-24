@@ -6,8 +6,10 @@ jdk: openjdk11
 install: true
 script: 
   - ./build.sh
-  - provider: gae
-   keyfile: /home/eduardo/Downloads/erp-test-202020-fb7a70a703a8.json
-   project: DEFINIR
-   on:
-    branch: main
+
+deploy:
+ provider: gae
+ keyfile: /home/eduardo/Downloads/erp-test-202020-fb7a70a703a8.json
+ project: "erp-test-202020"
+ on:
+   branch: main
