@@ -52,6 +52,18 @@
 <!--            <artifactId>hibernate-entitymanager</artifactId>-->
 <!--            <version>5.2.3.Final</version>-->
 <!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-gcp-starter -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-gcp-starter</artifactId>
+            <version>1.1.1.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-gcp-autoconfigure -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-gcp-autoconfigure</artifactId>
+            <version>1.2.8.RELEASE</version>
+        </dependency>
     </dependencies>
 
     <build>
