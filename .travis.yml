@@ -23,5 +23,5 @@ before_install:
     curl https://sdk.cloud.google.com | bash;
   fi
 - source $HOME/google-cloud-sdk/path.bash.inc
-- gcloud auth activate-service-account --key-file=$TRAVIS_BUILD_DIR/travis-ci-petclinic.json
+- gcloud auth activate-service-account --key-file=$TRAVIS_BUILD_DIR//erp-test-202020-fb7a70a703a8.json
 - gcloud config set core/project $PROJECT_ID
