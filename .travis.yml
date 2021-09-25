@@ -16,8 +16,6 @@ deploy:
    branch: main
 
 before_install:
-- sudo apt-get update
-- sudo apt-get install python3
 - export CLOUDSDK_CORE_DISABLE_PROMPTS=1
 - export PROJECT_ID=erp-test-202020
 - openssl aes-256-cbc -K $encrypted_bf8e2eb0ccbd_key -iv $encrypted_bf8e2eb0ccbd_iv -in erp-test-202020-fb7a70a703a8.json.enc -out ../erp-test-202020-fb7a70a703a8.json -d
@@ -28,3 +26,4 @@ before_install:
 - source $HOME/google-cloud-sdk/path.bash.inc
 - gcloud auth activate-service-account --key-file=../erp-test-202020-fb7a70a703a8.json
 - gcloud config set core/project $PROJECT_ID
+- pip install -U cryptography
