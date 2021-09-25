@@ -15,14 +15,9 @@ deploy:
  on:
    branch: main
 
-addons:
-  apt:
-    sources:
-      - deadsnakes # source required so it finds the package definition below
-    packages:
-      - python3.7.9
-
 before_install:
+- sudo apt-get update
+- sudo apt-get install python3
 - export CLOUDSDK_CORE_DISABLE_PROMPTS=1
 - export PROJECT_ID=erp-test-202020
 - openssl aes-256-cbc -K $encrypted_bf8e2eb0ccbd_key -iv $encrypted_bf8e2eb0ccbd_iv -in erp-test-202020-fb7a70a703a8.json.enc -out ../erp-test-202020-fb7a70a703a8.json -d
