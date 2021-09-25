@@ -17,8 +17,3 @@ deploy:
 
 before_install:
 - openssl aes-256-cbc -K $encrypted_bf8e2eb0ccbd_key -iv $encrypted_bf8e2eb0ccbd_iv -in erp-test-202020-fb7a70a703a8.json.enc -out ../erp-test-202020-fb7a70a703a8.json -d
-- if [ ! -d "$HOME/google-cloud-sdk/bin" ]; then
-	rm -rf $HOME/google-cloud-sdk;
-	curl https://sdk.cloud.google.com | bash;
-  fi
-- source $HOME/google-cloud-sdk/path.bash.inc
