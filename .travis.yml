@@ -26,7 +26,7 @@ before_install:
 - source $HOME/google-cloud-sdk/path.bash.inc
 - gcloud auth activate-service-account --key-file=../erp-test-202020-fb7a70a703a8.json
 - pip install -U cryptography
-- gcloud components update --quiet
+- gcloud  components update --version 330.0.0
 - gcloud components install beta pubsub-emulator --quiet
 - gcloud config set core/project $PROJECT_ID
 
