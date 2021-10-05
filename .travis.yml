@@ -18,6 +18,7 @@ deploy:
 before_install:
 - sudo apt-get update
 - sudo apt purge python2.7-minimal
+- sudo apt autoremove libpython-dev libpython2.7-dev python-attr python-enum34 python-idna python-ipaddress
 - sudo apt-get install python3
 - export CLOUDSDK_CORE_DISABLE_PROMPTS=1
 - export PROJECT_ID=erp-test-202020
